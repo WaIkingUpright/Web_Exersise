@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>운동 루틴 타이머</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>운동 루틴 타이머</h1>
+    </header>
+    
+    <main>
+        <div class="timer">
+            <h3 id="setNum">0번 세트</h3>
+            <div class="time">
+                <span id="sec">000</span>
+                <span id="secPoint">00</span>
+            </div>
+            <input type="button" class="btn btn-outline-success" id="startBtn" value="start">
+            <input type="button" class="btn btn-outline-danger" id="stopBtn" value="stop">
+        </div>
+        <div class="routine">
+            <div class="addRoutine">
+                <input type="button" class="btn btn-success" id="add" value="추가">
+                <input type="number" class="form-control" id="time" value="30" max="999" min="10">
+                <input type="text" class="form-control" id="name" value="운동종목">   
+            </div>
+            <table id="routineList" class="table table-hover">
+                <tr class="table-info"><td>항목</td><td>시간</td></tr>
+            </table>
+            <input type="button" class="btn btn-danger" id="deleteBtn" value="제거">
+            <span id="infoSet">세트수:</span>
+            <input type="number" id="set" value="1" min="1">
+        </div> 
+    </main>
+    <script  src="./script.js"></script>
+</body>
+</html>

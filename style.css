@@ -1,0 +1,89 @@
+@import 'bootstrap.min.css';
+
+header h1{
+  color: aquamarine;
+  font: bold;
+  font-size: 50pt;
+  margin-top: 100px;
+  text-align: center;
+}
+
+main {
+  position: relative;
+  display: flex;
+  margin: 100px;
+  text-align: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+/*timer 부분*/
+.timer{
+  float: left;
+  width: 30%;
+  height: 300pt;
+}
+#setNum{
+  margin-bottom: -25px;
+}
+#sec{
+	font-size: 250px;
+}
+#secPoint{
+  font-size: 60px;
+}
+#startBtn{
+  border-radius: 30px;
+  height: 70px;
+  width: 100px;
+  font: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 100px;   
+}
+#stopBtn{
+  border-radius: 30px;
+  height: 70px;
+  width: 100px;
+  font: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 100px;     
+}
+
+/*routine 부분*/
+.routine{
+  float: right;
+  width: 20%;
+  height: 300pt;
+}
+
+table{
+  margin-top: 35pt;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.addRoutine input{
+  width: 120px;
+  display: flex;
+  float: right;
+}
+.addRoutine #add{
+  width: 70px;
+}
+
+#deleteBtn{
+  display: flex;
+  float: right;
+}
+#infoSet{
+  display: flex;
+  float: left;
+  margin-right: 10px;
+}
+#set{
+  width: 35pt;
+  display: flex;
+  float: left;
+}
